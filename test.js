@@ -29,7 +29,19 @@
 
 //Normal
 
-// var fs = require('fs')
+var fs = require('fs')
+// fs.mkdirSync("dir")
+fs.rmdir('dir', function(err){
+    console.log(err)
+})
+
+// fs.mkdir("dir", function(){
+//     fs.readFile('data.txt','utf-8', function(err, data){
+//         fs.writeFile('./dir/file.txt', data, function(err){})
+//     })
+// })
+
+// fs.unlink('text.txt', function(err){})
 // fs.open('data.txt','r', function(err, fd){
 //     if(err){console.log(err)}
 //     else{
@@ -39,6 +51,9 @@
 //             // console.log(buffer.slice(0, bytes).toString())
 //             console.log(buffer)
 //         })
+
+//         // fs.write()
+
 //         fs.close(fd, function(err){
 //             console.log(err)
 //         })
@@ -49,15 +64,18 @@
 // })
 
 
- var fs = require('fs')
-// fs.writeFile('text.txt', "Hello World", function(err){
-//     if(err){console.log(err)}
-//     else{console.log("Data Written successfully")}
+//  var fs = require('fs')
+// // fs.writeFile('text.txt', "Hello World", function(err){
+// //     if(err){console.log(err)}
+// //     else{console.log("Data Written successfully")}
+// // })
+
+
+// fs.readFile('data.txt', 'utf-8', function(err, data){
+//     fs.writeFile("new.txt", data, function(err){
+//         console.log("File Written")
+//     })
 // })
-
-
-fs.readFile('data.txt', 'utf-8', function(err, data){
-
-})
+// console.log("Code below")
 
 
